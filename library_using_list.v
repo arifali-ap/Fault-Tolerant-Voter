@@ -445,7 +445,7 @@ Proof.
     pose proof (pf_validity vs) as [Hr].
     inversion Hr.
     pose proof (H2 H).
-    apply Arith_prebase.lt_not_le_stt in H3.
+    apply Arith_base.lt_not_le_stt in H3.
     contradiction.
   }    
   pose proof (pf_age_bound vs Hnnv).
