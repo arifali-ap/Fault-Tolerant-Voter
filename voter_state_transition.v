@@ -1987,7 +1987,6 @@ Extract Constant persistence_lmt_minus_1 => "S S S S 0".
 Extract Constant num_units => "S S S S S 0".
 Extract Constant delta_minus_1 => "S 0".
 Extract Constant simul_max_fault_minus_1 => "S 0".
-
-Extraction "./voter_state_transition.ml" voter_state_transition.
+Extraction "./Extracted_OCaml_Code/voter_state_transition.ml" voter_state_transition.
 
 
