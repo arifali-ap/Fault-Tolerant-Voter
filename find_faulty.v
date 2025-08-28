@@ -685,7 +685,7 @@ Proof.
                   (2*delta)
                    H8 ).
     assert ( adiff ground_truth (val (reading x)) <= 3 * delta) by lia.
-    apply Arith_prebase.gt_not_le_stt in H1.
+    apply Arith_base.gt_not_le_stt in H1.
     contradiction.  
   }
 
