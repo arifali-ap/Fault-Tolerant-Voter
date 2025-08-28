@@ -1,9 +1,17 @@
 ## To compile the programs
-   
-  - run `build.sh`
-  - `make`
-    
-     After the make, an extracted OCaml file (voter_state_transition.ml) will be available in the same directory.
+   To compile and to get the extracted OCaml files, execute the following
+```
+build.sh
+make
+``` 
+After the make, extracted OCaml files (`voter_state_transition.ml`, `voter_state_transition.mli` ) will be available in the directory Extracted_OCaml_Code.
+
+To compile the extracted files and to execute it on a sample input defined in `test_input.ml` file, execute the following:
+```
+ cd Extracted_OCaml_Code
+ ocamlc -o output voter_state_transition.mli voter_state_transition.ml test_input.ml 
+ ./output
+``` 
 ## Dependencies
   - [`Rocq Prover 9.0.0`](https://rocq-prover.org/)
   - [`OCaml`](https://ocaml.org/)
